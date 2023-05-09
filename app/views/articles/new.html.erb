@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>New something</h1>
+</div>
+<%= form_with model: @article do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, class: 'form-control' %>
+  <%= f.label :content %>
+  <%= f.text_field :content, class: 'form-control' %>
+  <%= f.submit class: 'btn btn-primary mt-2' %>
+<% end %>
+<%= link_to "back to list", articles_path, class: 'text-secondary text-decoration-none'%>

@@ -1,0 +1,11 @@
+<div class="container">
+  <h1><%= @article.title %></h1>
+  <p><%= @article.content %></p>
+
+</div>
+
+<%= link_to 'DELETE', article_path(@article) , class: 'btn btn-light', data: { turbo_method: :delete, turbo_confirm: "Delete #{@article.title}?" } %>
+
+<%= link_to "edit article", edit_article_path, class: 'text-secondary text-decoration-none'%>
+
+<%= link_to "back to list", articles_path, class: 'text-secondary text-decoration-none'%>

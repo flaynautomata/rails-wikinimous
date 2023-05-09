@@ -1,0 +1,8 @@
+<h1> Edit that , yeah that thing </h1>
+<%= form_with model: @article do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, class: 'form-control' %>
+  <%= f.label :content %>
+  <%= f.text_field :content, class: 'form-control' %>
+  <%= f.submit class: 'btn btn-primary mt-2' %>
+<% end %>

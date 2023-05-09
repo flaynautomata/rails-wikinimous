@@ -1,0 +1,9 @@
+<h1> MY SOMETHING LETS GOOOO</h1>
+<% @articles.each do |e| %>
+  <h5>
+ <%= link_to e.title, article_path(e), class: 'text-secondary text-decoration-none' %>
+  </h5>
+      <p><%= e.content %></p>
+
+    <% end %>
+<%= link_to "new article", new_article_path, class: 'text-secondary text-decoration-none'%>
